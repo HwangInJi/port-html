@@ -32,7 +32,7 @@
         justify-content: center;
         align-items: center;
         position: relative;
-        gap: 2rem;
+        gap: 3rem;
 
         .info_01 {
 
@@ -68,6 +68,11 @@
                         width: 100px;
                         height: 100px;
                     }
+
+                    >p {
+                        font-size: 16px;
+                        font-family: var(--fontI);
+                    }
                 }
 
                 .info_right {
@@ -79,6 +84,100 @@
                     >img {
                         width: 24px;
                         height: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1700px) {
+    .aboutme.container {
+        .aboutme_info {
+            gap: 1rem;
+
+            .info_01 {
+
+
+                .info_01_box {
+
+                    .info_text {
+                        >p {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1300px) {
+    .aboutme.container {
+        height: 620px;
+
+        .aboutme_info {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, auto);
+            gap: 20px;
+
+            .info_01 {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+@media (max-width:1000px) {
+    .aboutme.container {
+        height: 100vh;
+
+        .aboutme_info {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(1, auto);
+            gap: 20px;
+
+            .info_01 {
+                .info_01_box {
+                    .info_text {
+                        width: 70vw;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:550px) {
+    .aboutme.container {
+        height: 100vh;
+
+        .aboutme_header {
+            .about_text {
+                font-size: 14px;
+            }
+        }
+
+        .aboutme_info {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(1, auto);
+            gap: 20px;
+
+            .info_01 {
+                >h1 {
+                    display: none;
+                }
+
+                .info_01_box {
+                    .info_text {
+                        width: 70vw;
+                        text-align: center;
                     }
                 }
             }

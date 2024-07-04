@@ -1,0 +1,87 @@
+/* aboutme 어바웃미 페이지 */
+.aboutme.container {
+    background-color: #ececec;
+    height: 460px;
+    border-radius: 20px;
+    margin-top: 100px;
+
+    .aboutme_header {
+        margin-bottom: 2rem;
+
+        .about_title {
+            font-size: 16px;
+            color: #000;
+            text-align: center;
+            font-family: var(--fontA);
+            font-weight: normal;
+            padding-top: 25px;
+        }
+
+        .about_text {
+            font-size: 16px;
+            color: #000;
+            text-align: center;
+            padding-top: 30px;
+            font-family: var(--fontI);
+        }
+    }
+
+    .aboutme_info {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        gap: 2rem;
+
+        .info_01 {
+
+            >h1 {
+                text-align: center;
+                margin-bottom: 1rem;
+                font-family: var(--fontA);
+                font-size: 16px;
+                color: var(--black300);
+            }
+
+            .info_01_box {
+                display: flex;
+                gap: 20px;
+
+                .info_left {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    gap: 150px;
+
+                    >img {
+                        width: 24px;
+                        height: 24px;
+                    }
+                }
+
+                .info_text {
+                    width: 17vw;
+                    text-align: center;
+
+                    >img {
+                        width: 100px;
+                        height: 100px;
+                    }
+                }
+
+                .info_right {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    gap: 100px;
+
+                    >img {
+                        width: 24px;
+                        height: 24px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,13 +1,11 @@
 :root {
     --fontP: "FRUIT-PUNCH";
-    --fontJ: "Jua";
+    --fontJ: "BMJUA";
     --fontF: "Fredoka";
     --fontA: "Abel";
     --fontI: "Iropke Batang";
 
-    --mainColor: #ff4409;
-    --pointColor: #f7e1cd;
-    --backgroundColor: #FBF1E7;
+    --mainColor: #8CF4A1;
 
     --white: #fff;
     --white100: #fff;
@@ -30,7 +28,7 @@
     font-family: var(--fontF), var(--fontP), var(--fontJ), var(--fontA), var(--fontI);
     font-size: 16px;
     line-height: 1.5;
-    font-weight: 400;
+    font-weight: normal;
 
     /* 아이폰 가로 모드에서 글씨 확대 금지 */
     -webkit-text-size-adjust: 100%;

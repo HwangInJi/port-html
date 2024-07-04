@@ -40,7 +40,7 @@ input,
 table,
 text,
 textarea {
-    font-family: var(--fontN), 'AppleSDGothicNeo-Regular', 'Malgun Gothic', '맑은 고딕', 'dotum', '돋움';
+    font-family: var(--fontJ), 'AppleSDGothicNeo-Regular', 'Malgun Gothic', '맑은 고딕', 'dotum', '돋움';
 }
 
 /* 링크 초기화 */

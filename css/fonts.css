@@ -58,12 +58,17 @@
     font-display: swap;
 }
 
-@import url('https://fonts.cdnfonts.com/css/fruit-punch-2');
+@font-face {
+    font-family: 'BMJUA';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
-@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+@import url('https://fonts.cdnfonts.com/css/fruit-punch-2');
 
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Jua&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Abel&family=Fredoka:wght@300..700&family=Jua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 
 @import url('//fastly.jsdelivr.net/font-iropke-batang/1.2/font-iropke-batang.css');

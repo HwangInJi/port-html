@@ -181,25 +181,27 @@ a {
   margin-left: 1rem;
 }
 
-/* Main */
+/* Main 텍스트 효과 */
 #main {
   width: 98%;
+  height: 100vh;
   background-color: #000;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  margin-top: 2rem;
+  overflow: hidden; /* 내용을 height에 맞춰 자르기 위해 추가 */
 }
 
 .main_text {
   width: 100%;
+  height: auto; /* height를 auto로 변경 */
   font-family: "FRUIT-PUNCH";
-  font-size: 158px;
+  font-size: 10vw; /* 뷰포트 너비의 10%로 폰트 크기 설정 */
   color: #8cf4a1;
   text-align: center;
   text-transform: uppercase;
+  line-height: 1; /* 줄 간격을 조절하여 높이 맞춤 */
 }
 
 .main_text span {
@@ -230,8 +232,7 @@ a {
   60%,
   100% {
     color: #8cf4a1;
-    text-shadow: 0px 0px 5px #8cf4a1, 0px 0px 5px #8cf4a1, 0px 0px 5px #8cf4a1,
-      0px 0px 1px #8cf4a1;
+    text-shadow: none;
   }
 }
 
@@ -252,8 +253,7 @@ a {
   60%,
   100% {
     color: #8cf4a1;
-    text-shadow: 0px 0px 20px #d9d9d9, 0px 0px 30px #d9d9d9,
-      0px 0px 10px #d9d9d9, 0px 0px 1px #d9d9d9;
+    text-shadow: none;
   }
 }
 
@@ -335,6 +335,33 @@ a {
 
 .main_text span:nth-child(20) {
   animation-delay: 3.8s;
+}
+
+/* aboutme 어바웃미 페이지 */
+.aboutme {
+  background-color: #ececec;
+  width: 92%;
+  height: 560px;
+  margin: 0 auto;
+  border-radius: 20px;
+  margin-top: 100px;
+
+  .about_title {
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+    font-family: "Abel";
+    font-weight: normal;
+    padding-top: 25px;
+  }
+
+  .about_text {
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+    padding-top: 30px;
+    font-family: "iropke-batang";
+  }
 }
 
 /* 반응형 스타일 */

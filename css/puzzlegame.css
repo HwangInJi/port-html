@@ -164,17 +164,17 @@
 }
 
 /* 반응형 */
-@media (max-width: 2220px) {
+@media (max-width: 2000px) {
   .puzzle_main.container {
     .puzzle_left {
-      width: 40%;
+      width: 47%;
 
       .Bline02 {
-        margin-top: -38rem;
+        margin-top: -22rem;
       }
       .puzzle_img {
         > img {
-          width: 35vw;
+          width: 42vw;
         }
       }
     }

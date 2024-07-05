@@ -1,194 +1,311 @@
 /* 퍼즐게임 */
 .aboutme_puzzle.container {
+  width: 100%;
+  display: flex;
+  margin-top: 40px;
+
+  /* 시간초 나오는 부분 */
+  .puzzie_title {
     width: 100%;
     display: flex;
-    margin-top: 40px;
+    align-items: end;
+    justify-content: space-between;
 
-    /* 시간초 나오는 부분 */
-    .puzzie_title {
-        width: 100%;
+    .logo_run {
+      width: 50%;
+      display: flex;
+      align-items: center;
+
+      .puzzle_logo {
+        width: 35px;
+        height: 35px;
+      }
+
+      .puzzle_time {
+        width: 90%;
+        text-align: right;
+        font-family: var(--fontJ);
+        font-size: 20px;
+        color: var(--white);
+        border-bottom: 2px solid var(--mainColor);
+      }
+    }
+
+    .logo_text {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: right;
+
+      .info_left {
         display: flex;
-        align-items: end;
+        flex-direction: column;
         justify-content: space-between;
 
-        .logo_run {
-            width: 50%;
-            display: flex;
-            align-items: center;
-
-            .puzzle_logo {
-                width: 35px;
-                height: 35px;
-            }
-
-            .puzzle_time {
-                width: 90%;
-                text-align: right;
-                font-family: var(--fontJ);
-                font-size: 20px;
-                color: var(--white);
-                border-bottom: 2px solid var(--mainColor);
-            }
+        > img {
+          width: 24px;
+          height: 24px;
         }
+      }
 
-        .logo_text {
-            width: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: right;
-
-            .info_left {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-
-                >img {
-                    width: 24px;
-                    height: 24px;
-                }
-            }
-
-            .info_text {
-                >p {
-                    font-family: var(--fontJ);
-                    font-size: 20px;
-                    color: var(--white);
-                }
-            }
-
-            .info_right {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-
-                >img {
-                    width: 24px;
-                    height: 24px;
-                }
-            }
-
-            .imgimg {
-                >img {
-                    width: 3rem;
-                    height: 3rem;
-                    margin-left: 1rem;
-                }
-            }
-
-            .puzzle_msg {
-                background-color: #ECECEC;
-                padding: 10px 30px;
-                border-radius: 50px;
-                margin-left: 1rem;
-
-                .msg_ment {
-                    font-family: var(--fontJ);
-                    color: var(--black);
-                    font-size: 20px;
-                }
-            }
+      .info_text {
+        > p {
+          font-family: var(--fontJ);
+          font-size: 20px;
+          color: var(--white);
         }
+      }
+
+      .info_right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        > img {
+          width: 24px;
+          height: 24px;
+        }
+      }
+
+      .imgimg {
+        > img {
+          width: 3rem;
+          height: 3rem;
+          margin-left: 1rem;
+        }
+      }
+
+      .puzzle_msg {
+        background-color: #ececec;
+        padding: 10px 30px;
+        border-radius: 50px;
+        margin-left: 1rem;
+
+        .msg_ment {
+          font-family: var(--fontJ);
+          color: var(--black);
+          font-size: 20px;
+        }
+      }
     }
+  }
 }
 
 /* 메인 퍼즐게임 */
 .puzzle_main.container {
-    width: 100%;
-    height: 100vh;
-    margin-top: 2rem;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between; /* 추가하여 양옆 정렬 */
 
-    .puzzle_line {
-        width: 47%;
-        display: contents;
+  .puzzle_left {
+    width: 47%; /* 너비 50%로 수정 */
+    position: relative; /* 고정 위치 해제하고 상대 위치로 변경 */
+    display: flex; /* display: flex로 변경 */
+    flex-direction: column; /* 세로 방향으로 정렬 */
+    align-items: center; /* 중앙 정렬 */
+    margin-top: 1rem;
 
-        .puzzle_img {
-            >img {
-                width: 47%;
-                height: 47%;
-            }
+    .Bline01 {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      .puzzle_line01,
+      .puzzle_line02 {
+        > img {
+          width: 80px;
+          height: 80px;
         }
+      }
     }
+
+    .Bline02 {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin-top: -14rem;
+
+      .puzzle_line03,
+      .puzzle_line04 {
+        > img {
+          width: 80px;
+          height: 80px;
+        }
+      }
+    }
+
+    .puzzle_img {
+      width: 100%;
+      height: 100%;
+      > img {
+        margin-left: 2rem;
+        margin-top: -4%;
+        width: 43vw;
+      }
+    }
+  }
+
+  .puzzle_right {
+    width: 50%; /* 너비 50%로 유지 */
+    display: flex; /* flex로 변경 */
+    justify-content: end; /* 중앙 정렬 */
+    margin-top: 1.1rem;
+
+    .puzzle_p {
+      font-family: var(--fontP);
+      font-size: 165px;
+      line-height: 1.1;
+      color: var(--mainColor);
+      text-transform: uppercase;
+      text-align: center; /* 텍스트 중앙 정렬 */
+    }
+  }
 }
 
 /* 반응형 */
-@media (max-width:1520px) {
-    .aboutme_puzzle.container {
-        .puzzie_title {
-            .logo_text {
-                width: 90%;
-                display: flex;
-                align-items: center;
-                justify-content: right;
-            }
-        }
+@media (max-width: 2220px) {
+  .puzzle_main.container {
+    .puzzle_right {
+      .puzzle_p {
+        font-size: 140px;
+      }
     }
+  }
 }
 
-@media (max-width:1200px) {
-    .aboutme_puzzle.container {
-        .puzzie_title {
-            .logo_text {
-                .info_left {
-                    >img {
-                        width: 17px;
-                        height: 17px;
-                    }
-                }
-
-                .info_text {
-                    >p {
-                        font-size: 14px;
-                    }
-                }
-
-                .info_right {
-                    >img {
-                        width: 17px;
-                        height: 17px;
-                    }
-                }
-
-                .imgimg {
-                    >img {
-                        width: 2rem;
-                        height: 2rem;
-                    }
-                }
-
-                .puzzle_msg {
-                    padding: 5px 13px;
-
-                    .msg_ment {
-                        font-size: 14px;
-                    }
-                }
-            }
-        }
+@media (max-width: 1700px) {
+  .puzzle_main.container {
+    .puzzle_right {
+      .puzzle_p {
+        font-size: 110px;
+      }
     }
+  }
 }
 
-@media (max-width:860px) {
-    .aboutme_puzzle.container {
-        .puzzie_title {
-            .logo_text {
-                .puzzle_msg {
-                    display: none;
-                }
-            }
-        }
+@media (max-width: 1520px) {
+  .aboutme_puzzle.container {
+    .puzzie_title {
+      .logo_text {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+      }
     }
+  }
+
+  .puzzle_main.container {
+    .puzzle_right {
+      .puzzle_p {
+        font-size: 90px;
+      }
+    }
+  }
 }
 
-@media (max-width:550px) {
-    .aboutme_puzzle.container {
-        .puzzie_title {
-            .logo_run {
-                width: 100%;
-            }
-
-            .logo_text {
-                display: none;
-            }
+@media (max-width: 1200px) {
+  .aboutme_puzzle.container {
+    .puzzie_title {
+      .logo_text {
+        .info_left {
+          > img {
+            width: 17px;
+            height: 17px;
+          }
         }
+
+        .info_text {
+          > p {
+            font-size: 14px;
+          }
+        }
+
+        .info_right {
+          > img {
+            width: 17px;
+            height: 17px;
+          }
+        }
+
+        .imgimg {
+          > img {
+            width: 2rem;
+            height: 2rem;
+          }
+        }
+
+        .puzzle_msg {
+          padding: 5px 13px;
+
+          .msg_ment {
+            font-size: 14px;
+          }
+        }
+      }
     }
+  }
+
+  .puzzle_main.container {
+    .puzzle_right {
+      .puzzle_p {
+        font-size: 70px;
+      }
+    }
+  }
+}
+
+@media (max-width: 860px) {
+  .aboutme_puzzle.container {
+    .puzzie_title {
+      .logo_text {
+        .puzzle_msg {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .puzzle_main.container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, auto);
+
+    .puzzle_right {
+      width: 100%;
+      justify-content: center;
+      .puzzle_p {
+        font-size: 75px;
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .aboutme_puzzle.container {
+    .puzzie_title {
+      .logo_run {
+        width: 100%;
+      }
+
+      .logo_text {
+        display: none;
+      }
+    }
+  }
+
+  .puzzle_main.container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, auto);
+
+    .puzzle_right {
+      width: 100%;
+      justify-content: center;
+      .puzzle_p {
+        font-size: 40px;
+      }
+    }
+  }
 }

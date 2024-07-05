@@ -164,7 +164,7 @@
 }
 
 /* 반응형 */
-@media (max-width: 2000px) {
+@media (max-width: 2220px) {
   .puzzle_main.container {
     .puzzle_left {
       width: 40%;

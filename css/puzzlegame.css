@@ -166,6 +166,19 @@
 /* 반응형 */
 @media (max-width: 2220px) {
   .puzzle_main.container {
+    .puzzle_left {
+      width: 40%;
+
+      .Bline02 {
+        margin-top: -38rem;
+      }
+      .puzzle_img {
+        > img {
+          width: 35vw;
+        }
+      }
+    }
+
     .puzzle_right {
       .puzzle_p {
         font-size: 140px;

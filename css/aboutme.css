@@ -1,189 +1,185 @@
 /* aboutme 어바웃미 페이지 */
 .aboutme.container {
-    background-color: #ececec;
-    height: 460px;
-    border-radius: 20px;
-    margin-top: 100px;
+  background-color: #ececec;
+  height: 460px;
+  border-radius: 20px;
+  margin-top: 100px;
 
-    /* 제목 */
-    .aboutme_header {
-        margin-bottom: 2rem;
+  /* 제목 */
+  .aboutme_header {
+    margin-bottom: 2rem;
 
-        .about_title {
-            font-size: 16px;
-            color: #000;
-            text-align: center;
-            font-family: var(--fontA);
-            font-weight: normal;
-            padding-top: 25px;
-        }
-
-        .about_text {
-            font-size: 16px;
-            color: #000;
-            text-align: center;
-            padding-top: 30px;
-            font-family: var(--fontI);
-        }
+    .about_title {
+      font-size: 16px;
+      color: #000;
+      text-align: center;
+      font-family: var(--fontA);
+      font-weight: normal;
+      padding-top: 25px;
     }
 
-    /* 자기소개 키워드 */
-    .aboutme_info {
-        width: 100%;
+    .about_text {
+      font-size: 16px;
+      color: #000;
+      text-align: center;
+      padding-top: 30px;
+      font-family: var(--fontI);
+    }
+  }
+
+  /* 자기소개 키워드 */
+  .aboutme_info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 3rem;
+
+    .info_01 {
+      > h1 {
+        text-align: center;
+        margin-bottom: 1rem;
+        font-family: var(--fontA);
+        font-size: 16px;
+        color: var(--black300);
+      }
+
+      .info_01_box {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        gap: 3rem;
+        gap: 20px;
 
-        .info_01 {
+        .info_left {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          gap: 150px;
 
-            >h1 {
-                text-align: center;
-                margin-bottom: 1rem;
-                font-family: var(--fontA);
-                font-size: 16px;
-                color: var(--black300);
-            }
-
-            .info_01_box {
-                display: flex;
-                gap: 20px;
-
-                .info_left {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
-                    gap: 150px;
-
-                    >img {
-                        width: 24px;
-                        height: 24px;
-                    }
-                }
-
-                .info_text {
-                    width: 17vw;
-                    text-align: center;
-
-                    >img {
-                        width: 100px;
-                        height: 100px;
-                    }
-
-                    >p {
-                        font-size: 16px;
-                        font-family: var(--fontI);
-                    }
-                }
-
-                .info_right {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
-                    gap: 100px;
-
-                    >img {
-                        width: 24px;
-                        height: 24px;
-                    }
-                }
-            }
+          > img {
+            width: 24px;
+            height: 24px;
+          }
         }
+
+        .info_text {
+          width: 17vw;
+          text-align: center;
+
+          > img {
+            width: 100px;
+            height: 100px;
+          }
+
+          > p {
+            font-size: 16px;
+            font-family: var(--fontI);
+          }
+        }
+
+        .info_right {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          gap: 100px;
+
+          > img {
+            width: 24px;
+            height: 24px;
+          }
+        }
+      }
     }
+  }
 }
 
 /* 반응형 */
-@media (max-width:1700px) {
-    .aboutme.container {
-        .aboutme_info {
-            gap: 1rem;
+@media (max-width: 1700px) {
+  .aboutme.container {
+    .aboutme_info {
+      gap: 1rem;
 
-            .info_01 {
-
-
-                .info_01_box {
-
-                    .info_text {
-                        >p {
-                            font-size: 14px;
-                        }
-                    }
-                }
+      .info_01 {
+        .info_01_box {
+          .info_text {
+            > p {
+              font-size: 14px;
             }
+          }
         }
+      }
     }
+  }
 }
 
-@media (max-width:1300px) {
-    .aboutme.container {
-        height: 620px;
+@media (max-width: 1300px) {
+  .aboutme.container {
+    height: 620px;
 
-        .aboutme_info {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(2, auto);
-            gap: 20px;
+    .aboutme_info {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, auto);
+      gap: 20px;
 
-            .info_01 {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-        }
+      .info_01 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
     }
+  }
 }
 
-@media (max-width:1000px) {
-    .aboutme.container {
-        height: 100vh;
+@media (max-width: 1000px) {
+  .aboutme.container {
+    height: 113vh;
 
-        .aboutme_info {
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            grid-template-rows: repeat(1, auto);
-            gap: 20px;
+    .aboutme_info {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(1, auto);
+      gap: 20px;
 
-            .info_01 {
-                .info_01_box {
-                    .info_text {
-                        width: 70vw;
-                        text-align: center;
-                    }
-                }
-            }
+      .info_01 {
+        .info_01_box {
+          .info_text {
+            width: 70vw;
+            text-align: center;
+          }
         }
+      }
     }
+  }
 }
 
-@media (max-width:550px) {
-    .aboutme.container {
-        height: 100vh;
+@media (max-width: 550px) {
+  .aboutme.container {
+    height: 113vh;
 
-        .aboutme_header {
-            .about_text {
-                font-size: 14px;
-            }
-        }
-
-        .aboutme_info {
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            grid-template-rows: repeat(1, auto);
-            gap: 20px;
-
-            .info_01 {
-                >h1 {
-                    display: none;
-                }
-
-                .info_01_box {
-                    .info_text {
-                        width: 70vw;
-                        text-align: center;
-                    }
-                }
-            }
-        }
+    .aboutme_header {
+      .about_text {
+        font-size: 14px;
+      }
     }
+
+    .aboutme_info {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(1, auto);
+      gap: 20px;
+
+      .info_01 {
+        > h1 {
+          display: none;
+        }
+
+        .info_01_box {
+          .info_text {
+            width: 70vw;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
 }

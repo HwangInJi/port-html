@@ -4,6 +4,12 @@
     --fontF: "Fredoka";
     --fontA: "Abel";
     --fontI: "Iropke Batang";
+    --fontB: "Bangers";
+    --fontL: "Ballet";
+    --fontC: "Chewy";
+    --fontU: "Cormorant Upright";
+    --fontD: "DungGeunMo";
+    --fontT: "LOTTERIACHAB";
 
     --mainColor: #8CF4A1;
 
@@ -25,11 +31,11 @@
     --black700: #777;
 
     /* 기본 폰트 설정 */
-    font-family: var(--fontF), var(--fontP), var(--fontJ), var(--fontA), var(--fontI);
+    font-family: var(--fontF), var(--fontP), var(--fontJ), var(--fontA), var(--fontI), var(--fontB), var(--fontL), var(--fontC), var(--fontU), var(--fontD), var(--fontT);
     font-size: 16px;
     line-height: 1.5;
-    font-weight: normal;
-
+    font-weight: 300;
+    font-style: normal;
     /* 아이폰 가로 모드에서 글씨 확대 금지 */
     -webkit-text-size-adjust: 100%;
 

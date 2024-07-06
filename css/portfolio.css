@@ -1,0 +1,141 @@
+.portfolio.container {
+    width: 100%;
+    height: 100vh;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+
+    .pf_left {
+        width: 40%;
+        height: 600px;
+        background-color: #f0f0f0;
+        border-radius: 30px;
+
+        .pf_left01 {
+            width: 95%;
+            margin: 0 auto;
+            margin-top: 2rem;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #000;
+
+            >h1 {
+                font-family: var(--fontP);
+                font-size: 180px;
+                color: #000;
+                line-height: 1;
+            }
+
+            >p {
+                font-family: var(--fontF);
+                font-size: 40px;
+                font-weight: 400;
+                color: #000;
+                line-height: 0;
+            }
+        }
+
+        .pf_left02 {
+            width: 95%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1rem;
+
+            >span {
+                font-family: var(--fontD);
+                font-size: 20px;
+            }
+
+            >img {
+                width: 2%;
+                height: 2%;
+            }
+        }
+
+        .pf_left03 {
+            width: 95%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 8rem;
+
+            .btn_L,
+            .btn_R {
+                >img {
+                    width: 100%;
+                    height: 100%;
+                    cursor: pointer;
+                }
+
+            }
+        }
+    }
+
+    .pf_right {
+        width: 59%;
+
+        .project01 {
+            width: 100%;
+            background-color: #d9d9d9;
+
+            >img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .project_text {
+                width: 95%;
+                margin: 0 auto;
+                text-align: left;
+
+                .project_T {
+                    text-align: center;
+                    margin-top: -10rem;
+                    font-family: var(--fontT);
+                    color: var(--mainColor);
+                    font-size: 100px;
+                }
+
+                >span {
+                    font-family: var(--fontF);
+                    font-size: 30px;
+                }
+
+                >p {
+                    font-family: var(--fontD);
+                    font-size: 20px;
+                    margin-top: 1rem;
+                }
+            }
+        }
+    }
+}
+
+/* 반응형 */
+@media (max-width:1400px) {
+    .portfolio.container {
+        height: initial;
+
+        .pf_left {
+            .pf_left01 {
+                >p {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:860px) {
+    .portfolio.container {
+        .pf_left {
+            .pf_left02 {
+                >span {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

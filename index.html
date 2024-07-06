@@ -258,7 +258,7 @@
     </div>
   </div>
 
-  <div class="portfolio container">
+  <div class="portfolio01 container">
     <div class="pf_left">
       <div class="pf_left01">
         <h1>01</h1>
@@ -299,20 +299,65 @@
         </div>
         <div class="project_tool">
           <div class="tools">
-            <img src="/img/toolsline.svg" alt="tools">
-            <img src="/img/toolsline.svg" alt="tools">
-            <img src="/img/toolsline.svg" alt="tools">
+            <img src="/img/toolsjava.svg" alt="tools">
+            <img src="/img/toolsphp.svg" alt="tools">
+            <img src="/img/toolsgit.svg" alt="tools">
           </div>
-          <div class="pro_link"></div>
+          <div class="pro_link">
+            <ul>
+              <li><a href="#">SITE VIEW →</a></li>
+              <li><a href="#">CODE VIEW →</a></li>
+            </ul>
+          </div>
         </div>
         <img src="/img/Lline2.svg" alt="Lline">
       </section>
 
-      <section class="project02"></section>
+      <section class="project02">
+        <img src="/img/Lline1.svg" alt="Lline">
+        <div class="project_main">
+          <img src="/img/wrm-1.svg" alt="img">
+          <p>
+            티겟이 2030인만큼 MZ세대에게 힙하고 현대적인 분위기와 이미지의 사이트로 다가가기 위해
+            직접 우리만의 캐릭터를 만들어 디자인을 진행했고, 전체적인 컬러를 따뜻함과 열정을 상징하는
+            오렌지 컬러를 사용해 러너들 사이에서 친근하고 활기찬 분위기를 조성 및 러닝의 즐거움과 창의성을
+            강조하는 웹사이트로 만들고자 했습니다.
+          </p>
+        </div>
+        <img src="/img/Lline2.svg" alt="Lline">
+      </section>
 
-      <section class="project03"></section>
+      <section class="project03">
+        <img src="/img/Lline1.svg" alt="Lline">
+        <div class="project_main">
+          <img src="/img/wrm-2.svg" alt="img">
+          <p>
+            커뮤니티(게시판)페이지는 자유게시판, 크루모집, 번개모임, 질문게시판 등
+            각 게시판마다 링크를 연결시켜 원하는 페이지를 사용할 수 있도록
+            개별적인 PHP를 만들어 코드를 연결시켰으며, 직관적으로 보일 수 있도록
+            UI/UX 디자인을 했습니다.
+          </p>
+        </div>
+        <img src="/img/Lline2.svg" alt="Lline">
+      </section>
     </div>
   </div>
 </body>
+
+<script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+<script>
+  const lenis = new Lenis()
+
+  lenis.on('scroll', (e) => {
+    console.log(e)
+  })
+
+  function raf(time) {
+    lenis.raf(time)
+    requestAnimationFrame(raf)
+  }
+
+  requestAnimationFrame(raf)
+</script>
 
 </html>

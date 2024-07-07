@@ -1,4 +1,4 @@
-/* @import url("https://fonts.cdnfonts.com/css/fruit-punch-2"); */
+@import url("https://fonts.cdnfonts.com/css/fruit-punch-2");
 
 @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Jua&display=swap");
 
@@ -35,9 +35,9 @@
   font-style: normal;
 }
 
-@font-face {
+/* @font-face {
   font-family: "Fruit Punch Regular";
   src: url("fruit-punch.eot?") format("eot"), url("fruit-punch.woff") format("woff"), url("fruit-punch.ttf") format("truetype"), url("fruit-punch.svg#Fruit-Punch") format("svg");
   font-weight: normal;
   font-style: normal;
-}
+} */

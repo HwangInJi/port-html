@@ -48,7 +48,7 @@
       .info_01_box {
         display: flex;
         gap: 20px;
-        line-height: 2;
+        align-items: center;
 
         .info_left {
           display: flex;
@@ -96,7 +96,7 @@
           display: flex;
           flex-direction: column;
           justify-content: space-between;
-          gap: 100px;
+          gap: 150px;
 
           >img {
             width: 24px;
@@ -127,29 +127,25 @@
   }
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1500px) {
   .work.container {
-    height: 620px;
-
     .work_info {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(2, auto);
-      gap: 20px;
-
       .info_01 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
         .info_01_box {
+          align-items: center;
+
+          .info_left,
+          .info_right {
+            gap: 130px;
+          }
+
           .info_text {
 
-            .span01,
-            .span02,
-            .span03,
-            .span04 {
-              font-size: 40px;
+            >.span01,
+            >.span02,
+            >.span03,
+            >.span04 {
+              font-size: 50px;
             }
           }
         }
@@ -160,7 +156,7 @@
 
 @media (max-width: 1000px) {
   .work.container {
-    height: 113vh;
+    height: 105vh;
 
     .work_info {
       display: grid;
@@ -170,6 +166,9 @@
 
       .info_01 {
         .info_01_box {
+          justify-content: center;
+          text-align: center;
+
           .info_text {
             width: 70vw;
             text-align: center;
@@ -182,7 +181,7 @@
 
 @media (max-width: 550px) {
   .work.container {
-    height: 113vh;
+    height: 93vh;
 
     .aboutme_header {
       .about_text {

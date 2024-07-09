@@ -32,7 +32,10 @@
     grid-template-columns: repeat(4, 1fr);
 
     .info_01 {
-      > h1 {
+      margin-bottom: 3rem;
+      margin-top: 3rem;
+
+      >h1 {
         text-align: center;
         margin-bottom: 1rem;
         font-family: var(--fontA);
@@ -44,7 +47,7 @@
         text-align: center;
 
         .comment_left {
-          > img {
+          >img {
             width: 94%;
           }
         }
@@ -54,19 +57,24 @@
           height: 15vh;
           text-align: center;
           margin: 0 auto;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          /* 추가된 부분 */
 
-          > img {
+          >img {
             width: 15%;
-            height: 50%;
+            height: auto;
+            aspect-ratio: 1/1;
             border-radius: 50%;
           }
 
-          > p {
+          >p {
             font-size: 20px;
             font-family: var(--fontI);
           }
 
-          > span {
+          >span {
             font-size: 16px;
             margin-top: 0.5rem;
             font-family: var(--fontI);
@@ -74,11 +82,29 @@
         }
 
         .comment_right {
-          > img {
+          >img {
             width: 94%;
           }
         }
       }
+    }
+  }
+}
+
+@media (max-width:1500px) {
+  .comment.container {
+    .work_info {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+@media (max-width:1024px) {
+  .comment.container {
+    .work_info {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 }

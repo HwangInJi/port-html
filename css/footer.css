@@ -1,0 +1,10 @@
+.footer.container {
+    height: 100vh;
+
+    >span {
+        font-family: var(--fontT);
+        font-size: 148px;
+        color: var(--mainColor);
+        line-height: 1;
+    }
+}
